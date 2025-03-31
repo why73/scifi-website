@@ -1,0 +1,22 @@
+// 视差滚动控制器
+const controller = new ScrollMagic.Controller();
+
+// 首页标题动画
+gsap.from("#hero h1", {
+    duration: 1.5,
+    opacity: 0,
+    y: 100,
+    ease: "power4.out"
+});
+
+// 技术参数模块交互动画
+new ScrollMagic.Scene({
+    triggerElement: "#specs",
+    triggerHook: 0.8
+})
+.setTween(gsap.to("#specs .grid", { 
+    opacity: 1,
+    stagger: 0.2,
+    y: 0 
+}))
+.addTo(controller);
