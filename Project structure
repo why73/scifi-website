@@ -1,0 +1,10 @@
+/scifi-website
+  ├── index.html
+  ├── css/
+  │    └── style.css
+  ├── js/
+  │    ├── main.js
+  │    ├── three.min.js
+  │    └── gsap.min.js
+  └── assets/
+       └── (图片/字体资源)
