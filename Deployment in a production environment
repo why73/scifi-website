@@ -1,0 +1,13 @@
+server {
+    listen 80;
+    server_name scifi.example.com;
+    
+    location / {
+        root /var/www/scifi-website;
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
+
+    gzip on;
+    gzip_types text/css application/javascript;
+}
