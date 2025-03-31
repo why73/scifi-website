@@ -1,0 +1,26 @@
+.hologram-card {
+  position: relative;
+  background: rgba(0, 34, 51, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #0ff;
+}
+
+.hologram-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    rgba(0, 255, 255, 0.1) 2px,
+    transparent 4px
+  );
+  animation: gridFlow 20s linear infinite;
+}
+
+@keyframes gridFlow {
+  from { background-position: 0 0; }
+  to { background-position: 0 100vh; }
+}
